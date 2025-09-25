@@ -1,0 +1,347 @@
+/* .image-banner {
+  width: 100%;
+  height: 800px; 
+  background-image: url('/images/Aurolab\ Vivid\ CFV\ Banner\ 1.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner-overlay {
+  width: 100%;
+  height: 100%;
+} */
+
+
+/* Product Section */
+.product-section {
+  padding: 50px 0;
+}
+
+/* Title */
+.product-section h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #016481;
+  margin-bottom: 20px;
+}
+
+/* Subtitle */
+.product-section p strong {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: #000000;
+}
+
+/* Content paragraph */
+.product-section p:not(strong) {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #757577;
+}
+.product-section h5 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: #000000;
+}
+.key-benefits li {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal; /* Regular */
+  font-size: 18px;
+  color: #757577;
+    }
+
+
+/* Thumbnails */
+.thumbnail-img {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+.thumbnail-img.active {
+  border: 2px solid #016481;
+}
+
+/* Feature List */
+.feature-list {
+  margin-top: 20px;
+}
+.feature-item {
+  display: flex;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.feature-item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Download Button */
+.btn-download {
+  background-color: #016481;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+.btn-download:hover {
+  background-color: #fff;
+  color: #016481;
+  border: 1px solid #016481;
+}
+.image-card-wrapper {
+  text-align: center;
+}
+
+.image-card {
+  width: 100%;
+  height: 400px;
+  background-color: #fff; /* white background */
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+.feature-img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain; /* image centered and scaled */
+}
+
+/* Arrow Button */
+.btn-arrow {
+  position: absolute;
+  top: -7px;
+  right: -13px;
+ /* background-color: #016481; */
+   border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+
+
+.popup-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #016481;
+  margin-bottom: 20px;
+}
+/* Popup Styles */
+.image-popup {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.image-popup .popup-img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+.image-popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Heading */
+.image-card-wrapper h5 {
+ font-family: Montserrat;
+font-style: Medium;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0%;
+color: black;
+text-align: left;
+}
+
+.second-banner {
+    position: relative;
+    width: 100%;
+    max-height: 600px; /* adjust height */
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.second-banner-content {
+    position: absolute;
+    top: 50%;       /* vertically center */
+    right: 50px;    /* right side distance from edge */
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: left; /* text right align */
+    max-width: 700px;  /* adjust as needed */
+}
+
+.second-banner-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5); /* readability */
+}
+.second-banner-heading strong{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 0px;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5); /* readability */
+}
+
+.second-banner-btn {
+    padding: 12px 24px;
+    background-color: #fff;
+    color: #016481;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.second-banner-btn:hover {
+    background-color: #016481;
+    color: #fff;
+}
+
+
+
+.features-section {
+  padding: 70px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+.features-section {
+    background-image: url('/images/your-background.jpg'); 
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    padding: 80px 0;              
+}
+
+.features-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.features-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+}
+
+.feature-icon img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.features-title {
+ font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #016481;
+  margin-bottom: 60px;
+}
+
+.feature-text {
+font-size: 22px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+text-transform: capitalize;
+  color: #000000;
+  font-weight: 500 !important;
+}
+
+
+@media (max-width: 768px) {
+    .second-banner-content {
+        top: 50%;
+        left: 50%;
+        right: auto;          
+        transform: translate(-50%, -50%); 
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .second-banner-heading {
+        font-size: 22px; 
+    }
+    .second-banner-heading strong{
+    font-size: 22px;
+  
+}
+.banner-img {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+    .second-banner-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

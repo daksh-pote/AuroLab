@@ -46,35 +46,61 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-// scroll animation start
+// // scroll animation start
 
-// Intersection Observer Options
-const options = {
-    root: null, // Use the viewport as the root
-    rootMargin: '0px', // No margin
-    threshold: 0.1 // Trigger when 10% of the element is visible
-};
+// // Intersection Observer Options
+// const options = {
+//     root: null, // Use the viewport as the root
+//     rootMargin: '0px', // No margin
+//     threshold: 0.1 // Trigger when 10% of the element is visible
+// };
 
-// Callback function to handle the intersection
-const observerCallback = (entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            // Add the class to trigger animation
-            entry.target.classList.add('visible');
-            // Optionally, unobserve after it's animated
-            observer.unobserve(entry.target);
-        }
+// // Callback function to handle the intersection
+// const observerCallback = (entries, observer) => {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             // Add the class to trigger animation
+//             entry.target.classList.add('visible');
+//             // Optionally, unobserve after it's animated
+//             observer.unobserve(entry.target);
+//         }
+//     });
+// };
+
+// // Create an Intersection Observer instance
+// const observer = new IntersectionObserver(observerCallback, options);
+
+// // Target all sections/elements you want to animate
+// const sections = document.querySelectorAll('.section-animate');
+
+// // Observe each section
+// sections.forEach(section => {
+//     observer.observe(section);
+// });
+// // scroll animation end
+
+// =======================
+// AOS Animations
+// =======================
+document.addEventListener("DOMContentLoaded", function () {
+  // Map utility classes → AOS animations
+  document.querySelectorAll(".aos-left").forEach(el => el.setAttribute("data-aos", "fade-left"));
+  document.querySelectorAll(".aos-right").forEach(el => el.setAttribute("data-aos", "fade-right"));
+  document.querySelectorAll(".aos-up").forEach(el => el.setAttribute("data-aos", "fade-up"));
+  document.querySelectorAll(".aos-down").forEach(el => el.setAttribute("data-aos", "fade-down"));
+
+  // Stagger inside rows
+  document.querySelectorAll(".row").forEach(row => {
+    let delay = 0;
+    row.querySelectorAll(".col").forEach(col => {
+      col.setAttribute("data-aos-delay", delay);
+      delay += 200; // increase by 200ms for each col
     });
-};
+  });
 
-// Create an Intersection Observer instance
-const observer = new IntersectionObserver(observerCallback, options);
-
-// Target all sections/elements you want to animate
-const sections = document.querySelectorAll('.section-animate');
-
-// Observe each section
-sections.forEach(section => {
-    observer.observe(section);
+  // Initialize AOS
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
 });
-// scroll animation end

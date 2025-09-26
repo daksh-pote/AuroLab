@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="css/product.css" />
+  <!-- AOS CSS -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+
 </head>
 
 <body>
@@ -33,7 +37,7 @@
     <div class="container">
       <div class="row align-items-top">
         <!-- Left Column: Images -->
-        <div class="col-lg-6 aos-bottom">
+        <div class="col-lg-6 aos-up">
           <div class="d-flex">
             <div class="me-3 d-flex flex-column">
               <img src="Assets/images/Auroflex-EV.png" class="thumbnail-img active" onclick="changeImage(this)" />
@@ -47,7 +51,7 @@
         </div>
 
         <!-- Right Column: Content -->
-        <div class="col-lg-6 mt-4 mt-lg-0 aos-bottom">
+        <div class="col-lg-6 mt-4 mt-lg-0 aos-up">
           <h3>Auroflex EV Monofocal IOL</h3>
           <p><strong>Hydrophilic Foldable Poly Hydroxy Ethyl Methacrylate Intraocular lens with dual Haptic & Aspheric
               surface</strong></p>
@@ -58,7 +62,7 @@
           </p>
 
           <h5>Key Benefits:</h5>
-          <ul class="key-benefits aos-bottom">
+          <ul class="key-benefits aos-up">
             <li>Negative Aberrated optic for better contrast</li>
             <li>Dual Haptic design for better centration and adapt well to bear capsular bag contraction </li>
             <li>Greater stability of an IOL due to a larger contact area </li>
@@ -70,19 +74,19 @@
 
           <!-- Feature List with your check image -->
           <div class="row feature-list mt-3">
-            <div class="col-6 feature-item aos-bottom">
+            <div class="col-6 feature-item aos-up">
               <img src="Assets/images/Group-28.png" alt="check" class="me-2" />
               Aurovue Material
             </div>
-            <div class="col-6 feature-item aos-bottom">
+            <div class="col-6 feature-item aos-up">
               <img src="Assets/images/Group-28.png" alt="check" class="me-2" />
               Preloaded IOL
             </div>
-            <div class="col-6 feature-item aos-bottom">
+            <div class="col-6 feature-item aos-up">
               <img src="Assets/images/Group-28.png" alt="check" class="me-2" />
               Zero Aberration
             </div>
-            <div class="col-6 feature-item aos-bottom">
+            <div class="col-6 feature-item aos-up">
               <img src="Assets/images/Group-28.png" alt="check" class="me-2" />
               Truedge Technology
             </div>
@@ -94,7 +98,7 @@
     </div>
   </section>
 
-  <section class="popup-section py-5 aos-bottom" style="
+  <section class="popup-section py-5 " style="
         background-image: url('/images/Frame-67.png');
         background-size: cover;
         background-position: center;
@@ -103,7 +107,7 @@
       <h2 class="text-center mb-5">Scientific Details</h2>
       <div class="row g-4">
         <!-- Column 1 -->
-        <div class="col-md-6 aos-bottom">
+        <div class="col-md-6 aos-up">
           <div class="image-card-wrapper">
             <div class="image-card position-relative d-flex justify-content-center align-items-center">
               <img src="Assets/images/Scietific-Details-1.png" class="feature-img" alt="Feature 1" />
@@ -116,7 +120,7 @@
         </div>
 
         <!-- Column 2 -->
-        <div class="col-md-6 aos-bottom">
+        <div class="col-md-6 aos-up">
           <div class="image-card-wrapper">
             <div class="image-card position-relative d-flex justify-content-center align-items-center">
               <img src="Assets/images/Scietific-Details-2.png" class="feature-img" alt="Feature 2" />
@@ -134,12 +138,12 @@
   </section>
 
   <!-- Popup Modal -->
-  <div class="image-popup aos-bottom" id="imagePopup" onclick="closePopup()">
+  <div class="image-popup " id="imagePopup" onclick="closePopup()">
     <span class="close">&times;</span>
     <img class="popup-img" id="popupImage" />
   </div>
 
-  <section class="second-banner aos-bottom">
+  <section class="second-banner ">
     <img src="Assets/images/second-banner.png" alt="Banner Image" class="banner-img" />
 
     <div class="second-banner-content ">
@@ -152,7 +156,7 @@
   </section>
 
     <!-- Why Choose Aurolab Section Start -->
-  <section class="why-section aos-bottom">
+  <section class="why-section">
     <div class="why-container">
       <div class="why-left">
         <h2>Why Choose Aurolab</h2>
@@ -207,6 +211,9 @@
 
   <footer id="footer"></footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   
   <script src="js/script.js"></script>
   <script src="header.html"></script>

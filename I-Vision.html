@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="css/product.css" />
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+
 </head>
 
 <body>
@@ -25,7 +29,7 @@
   </section>
 
   <!-- Product section -->
-  <section class="product-section" style="
+  <section class="product-section aos-bottom" style="
         background-image: url('/images/Group-29.png');
         background-size: cover;
         background-position: center;
@@ -48,7 +52,7 @@
         </div>
 
         <!-- Right Column: Content -->
-        <div class="col-lg-6 mt-4 mt-lg-0">
+        <div class="col-lg-6 mt-4 mt-lg-0 aos-bottom">
           <h3>I-Vision Monofocal IOL</h3>
           <p><strong>Hydrophilic Foldable Poly Hydroxy Ethyl Methacrylate Intraocular lens with dual Haptic</strong></p>
           <p>
@@ -56,7 +60,7 @@
           </p>
 
           <h5>Key Benefits:</h5>
-          <ul class="key-benefits">
+          <ul class="key-benefits aos-bottom">
             <li> I-vision Hydrophilic spherical lens made of P-Hema material which is 26% water content material</li>
             <li> Dual Haptic design for better centration and adapt well to bear capsular bag contraction </li>
             <li> Greater stability of an IOL due to a larger contact area</li>
@@ -67,7 +71,7 @@
           </ul>
 
           <!-- Feature List with your check image -->
-          <div class="row feature-list mt-3">
+          <div class="row feature-list mt-3 aos-bottom">
             <div class="col-6 feature-item">
               <img src="../Assets/images/Group-28.png" alt="check" class="me-2" />
               Aurovue Material
@@ -92,7 +96,7 @@
     </div>
   </section>
 
-  <section class="popup-section py-5" style="
+  <section class="popup-section py-5 aos-bottom" style="
         background-image: url('../Assets/images/Frame-67.png');
         background-size: cover;
         background-position: center;
@@ -132,15 +136,15 @@
   </section>
 
   <!-- Popup Modal -->
-  <div class="image-popup" id="imagePopup" onclick="closePopup()">
+  <div class="image-popup aos-bottom" id="imagePopup" onclick="closePopup()">
     <span class="close">&times;</span>
     <img class="popup-img" id="popupImage" />
   </div>
 
-  <section class="second-banner">
+  <section class="second-banner aos-bottom">
     <img src="../Assets/images/second-banner.png" alt="Banner Image" class="banner-img" />
 
-    <div class="second-banner-content">
+    <div class="second-banner-content aos-bottom">
       <h2 class="second-banner-heading">
         View our product<br />
         through <strong>Vision Stimulator</strong>
@@ -150,7 +154,7 @@
   </section>
 
   <!-- Why Choose Aurolab Section Start -->
-  <section class="why-section">
+  <section class="why-section aos-bottom">
     <div class="why-container">
       <div class="why-left">
         <h2>Why Choose Aurolab</h2>
@@ -203,7 +207,7 @@
   </section>
   <!-- Why Choose Aurolab Section End -->
 
-  <footer id="footer"></footer>
+  <footer id="footer aos-bottom"></footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   
   <script src="js/script.js"></script>
@@ -231,6 +235,33 @@
       popup.style.display = "none";
     }
   </script>
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Map utility classes → AOS animations
+    document.querySelectorAll(".aos-left").forEach(el => el.setAttribute("data-aos", "fade-left"));
+    document.querySelectorAll(".aos-right").forEach(el => el.setAttribute("data-aos", "fade-right"));
+    document.querySelectorAll(".aos-bottom").forEach(el => el.setAttribute("data-aos", "fade-down"));
+    document.querySelectorAll(".aos-bottom").forEach(el => el.setAttribute("data-aos", "fade-up"));
+
+    // Stagger inside rows
+    document.querySelectorAll(".row").forEach(row => {
+      let delay = 0;
+      row.querySelectorAll(".col").forEach(col => {
+        col.setAttribute("data-aos-delay", delay);
+        delay += 200; // increase by 200ms for each col
+      });
+    });
+
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  });
+</script>
+
 </body>
 
 </html>

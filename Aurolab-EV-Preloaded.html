@@ -236,32 +236,7 @@
       popup.style.display = "none";
     }
   </script>
-    <!-- AOS JS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Map utility classes → AOS animations
-    document.querySelectorAll(".aos-left").forEach(el => el.setAttribute("data-aos", "fade-left"));
-    document.querySelectorAll(".aos-right").forEach(el => el.setAttribute("data-aos", "fade-right"));
-    document.querySelectorAll(".aos-bottom").forEach(el => el.setAttribute("data-aos", "fade-down"));
-    document.querySelectorAll(".aos-bottom").forEach(el => el.setAttribute("data-aos", "fade-up"));
-
-    // Stagger inside rows
-    document.querySelectorAll(".row").forEach(row => {
-      let delay = 0;
-      row.querySelectorAll(".col").forEach(col => {
-        col.setAttribute("data-aos-delay", delay);
-        delay += 200; // increase by 200ms for each col
-      });
-    });
-
-    // Initialize AOS
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  });
-</script>
+  
 </body>
 
 </html>
